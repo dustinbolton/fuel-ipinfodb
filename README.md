@@ -37,7 +37,7 @@ Next, copy the `packages/ipinfodb/config/ipinfodb.php` from the package up into 
 
 ## Usage
 
-The package must either be loaded by defining in your app's config.php -> always_load -> packages section as "ipinfodb" or manually loaded via `Package::load( 'ipinfodb' )`;
+The package must either be loaded by defining in your app's config.php -> always_load -> packages section as "ipinfodb" or manually loaded via `Package::load( 'ipinfodb' );`
 
 ```php
 $ip_address = Input::ip(); // IP address of visitor.
@@ -48,7 +48,7 @@ echo '<pre>' . print_r( $response, true ) . '</pre>'; // Print out response arra
 For more information about the API see [Ipinfodb API Documentation](http://www.ipinfodb.com/ip_location_api.php).
 
 ## Example Response
-`Ipinfodb::locate( '207.97.227.239' )` returns:
+`Ipinfodb::locate( '207.97.227.239' );` returns:
 
 ```
 Array
