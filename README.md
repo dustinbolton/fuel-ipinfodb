@@ -48,19 +48,21 @@ echo '<pre>' . print_r( $response, true ) . '</pre>'; // Print out response arra
 For more information about the API see [Ipinfodb API Documentation](http://www.ipinfodb.com/ip_location_api.php).
 
 ## Example Response
+`Ipinfodb::locate( '207.97.227.239' )` returns:
+
 ```
 Array
 (
     [statusCode] => OK
     [statusMessage] => 
-    [ipAddress] => 98.168.135.100
+    [ipAddress] => 207.97.227.239
     [countryCode] => US
     [countryName] => UNITED STATES
-    [regionName] => OKLAHOMA
-    [cityName] => EDMOND
-    [zipCode] => 73003
-    [latitude] => 35.6592
-    [longitude] => -97.4547
+    [regionName] => TEXAS
+    [cityName] => SAN ANTONIO
+    [zipCode] => 78218
+    [latitude] => 29.5614
+    [longitude] => -98.4126
     [timeZone] => -06:00
 )
 ```
