@@ -33,11 +33,11 @@ Alternatively you can download it and extract it into `fuel/packages/ipinfodb/`.
 
 Configuration is easy. First thing you will need to do is to [register for your Ipinfodb API key](http://www.ipinfodb.com/register.php) (if you haven't already; it's free!).
 
-Next, copy the `packages/ipinfodb/config/ipinfodb.php` from the package up into fuel's `app/config/` directory. Open it up and enter your API keys.
+Next, copy the `packages/ipinfodb/config/ipinfodb.php` from the package up into fuel's `app/config/` directory. Open it up and enter your API key. You may optionally change the default geolocation precision level from `city` to `country` if you only need country-level precision.
 
 ## Usage
 
-The package must either be loaded by defining in your app's config.php -> always_load -> packages section as "ipinfodb" or manually loaded via `Package::load( 'ipinfodb' );`
+The package must either be loaded by defining in your app's config.php -> always_load -> packages section as "ipinfodb" or manually loaded via `Package::load( 'ipinfodb' );`. An optional second parameter may have the value `city` or `country` to change the geolocation precision level.
 
 ```php
 $ip_address = Input::ip(); // IP address of visitor.
